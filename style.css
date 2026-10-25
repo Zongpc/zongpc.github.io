@@ -6,3 +6,18 @@
 @media(max-width:520px){.page-shell{padding:0 21px}h1{font-size:49px}.research-grid{grid-template-columns:1fr}.research-card{padding:24px}.diagram{max-width:310px;gap:9px}.diagram span{font-size:9px}.research-card h3{font-size:24px}.research-card p{font-size:12px}.section-heading{gap:10px}.filters{gap:1px}.filters button{font-size:10px;padding:5px 7px}.publication{grid-template-columns:1fr;gap:10px;padding:24px 0}.venue{display:flex;align-items:baseline;gap:10px;padding:0}.venue>span{margin:0;font-size:10px}.publication h3{font-size:22px}.authors{font-size:11px}.pub-venue{font-size:10px}.timeline-item{grid-template-columns:1fr;gap:6px}.timeline{gap:25px}.dates{font-size:10px}.timeline-item h4{font-size:13px}.timeline-item p{font-size:11px}.award{gap:14px}.award-rank{width:67px;font-size:26px}.award h4{font-size:11px}.contact-grid{grid-template-columns:1fr}.qr{width:143px;margin-top:10px}.contact-intro{font-size:13px}.email{font-size:22px}.hero-actions{gap:24px}footer{font-size:9px}.contribution{margin-left:0;margin-top:4px}.sidebar nav{gap:18px}.sidebar-bottom{gap:13px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 @media print{.sidebar,.hero-actions,.filters,.qr,.skip-link{display:none}.page-shell{display:block;padding:0}main{padding:0}.section{padding:20px 0;break-inside:avoid}body{background:white;font-size:11pt}.publication{break-inside:avoid}.research-card{background:white}h1{font-size:44px}.section-heading h2{font-size:24px}a{text-decoration:none}footer{padding:14px 0}.publication[hidden]{display:grid}}
+
+/* Personal interests: an illustrated field-notes interlude. */
+.personal-lead{margin-bottom:22px}
+.hobby-panorama{margin:0 -8px 19px;overflow:hidden;border-radius:3px}
+.hobby-panorama img{display:block;width:100%;height:auto;mix-blend-mode:multiply}
+.hobbies{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.hobby{min-width:0}
+.hobby-caption{display:flex;align-items:baseline;gap:11px;border-top:1px solid var(--line);padding-top:14px}
+.hobby-index{font-size:9px;color:#9a6752;letter-spacing:.7px}
+.hobby h3{font:normal 22px/1.4 var(--serif);letter-spacing:-.3px;margin:0 0 4px}
+.hobby p{font-size:11px;line-height:1.8;color:var(--muted);margin:0}
+.hobby-scene{display:none}
+@media(max-width:800px){.hobbies{gap:15px}.hobby h3{font-size:21px}.hobby p{font-size:10px}.hobby-caption{gap:8px}.hobby-panorama{margin:0 -5px 15px}}
+@media(max-width:520px){.hobby-panorama{display:none}.hobbies{grid-template-columns:1fr;gap:27px}.hobby-scene{display:block;width:100%;aspect-ratio:1.65;background-image:url('assets/hobbies-watercolor.webp');background-size:300% auto;background-repeat:no-repeat;mix-blend-mode:multiply}.hiking-scene{background-position:left 50%}.fishing-scene{background-position:center 58%}.racing-scene{background-position:right 64%}.hobby-caption{padding-top:12px;gap:12px}.hobby h3{font-size:24px}.hobby p{font-size:12px}.hobby-index{font-size:10px}.personal-lead{margin-bottom:18px}}
+@media print{.personal-section{break-inside:avoid}.hobby-panorama{display:block}.hobby-scene{display:none}.hobbies{grid-template-columns:repeat(3,minmax(0,1fr))}}
