@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Pengchen Zong — Ph.D. candidate at Xi'an Jiaotong University. Computer architecture, memory systems, prefetching, and hardware–software co-design.">
+  <meta name="theme-color" content="#f6f4ef">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pengchen Zong | Computer Architecture & Memory Systems">
+  <meta property="og:description" content="Research in prefetching, hardware–software co-design, and efficient agent execution on CPU–GPU systems.">
+  <meta property="og:url" content="https://zongpc.github.io/">
+  <meta property="og:image" content="https://zongpc.github.io/assets/portrait.jpg">
+  <link rel="canonical" href="https://zongpc.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Pengchen Zong | Computer Architecture & Memory Systems</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell">
+    <aside class="sidebar" aria-label="Profile and navigation">
+      <a href="#about" class="monogram" aria-label="Pengchen Zong, home">PZ<span>↗</span></a>
+      <div class="profile">
+        <img class="portrait" src="assets/portrait.jpg" alt="Pengchen Zong" width="164" height="188" fetchpriority="high">
+        <p class="profile-name">Pengchen Zong <span lang="zh-Hans">宗鹏陈</span></p>
+        <p class="profile-role">Ph.D. Candidate<br>Xi’an Jiaotong University</p>
+        <p class="location"><span aria-hidden="true">◎</span> Xi’an, China</p>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#about" class="active"><span>About</span><span aria-hidden="true">01</span></a>
+        <a href="#research"><span>Research</span><span aria-hidden="true">02</span></a>
+        <a href="#publications"><span>Publications</span><span aria-hidden="true">03</span></a>
+        <a href="#background"><span>Background</span><span aria-hidden="true">04</span></a>
+        <a href="#contact"><span>Contact</span><span aria-hidden="true">05</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <a href="assets/CV-Pengchen-Zong.pdf" class="cv-link" target="_blank" rel="noopener">Curriculum vitae <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/Zongpc" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+        <p>Computer architecture.<br>Thoughtfully connected.</p>
+      </div>
+    </aside>
+    <main id="main">
+      <header class="hero section" id="about">
+        <div class="eyebrow"><span class="dot" aria-hidden="true"></span> COMPUTER ARCHITECTURE & MEMORY SYSTEMS</div>
+        <h1>Pengchen <em>Zong.</em></h1>
+        <p class="hero-subtitle">Understanding what comes next.<br>Making systems ready for it.</p>
+        <div class="intro">
+          <p>I am a Ph.D. candidate in the School of Artificial Intelligence at <strong>Xi’an Jiaotong University</strong>, co-advised by Prof. Pengju Ren and Prof. Tian Xia. I am affiliated with the State Key Laboratory of Human-Machine Hybrid Augmented Intelligence and the Institute of Artificial Intelligence and Robotics.</p>
+          <p>My research spans <strong>computer architecture, hardware–software co-design, and memory systems</strong>, with a particular focus on prefetching for irregular workloads. I am also exploring how execution plans and runtime feedback can improve the efficiency of AI agents on CPU–GPU systems.</p>
+          <p>Before my Ph.D., I worked as a digital IC design engineer at HiSilicon, focusing on SoC debugging, observability, and integration.</p>
+        </div>
+        <div class="hero-actions"><a class="button primary" href="mailto:zongpc.me@outlook.com">Get in touch <span aria-hidden="true">↗</span></a><a class="text-link" href="assets/CV-Pengchen-Zong.pdf" target="_blank" rel="noopener">View CV <span aria-hidden="true">↗</span></a></div>
+        <div class="news"><span class="news-label">RESEARCH UPDATE</span><p>Our work on loop-decoupled prefetching for linked data structures has been accepted to <strong>MICRO 2026</strong>.</p></div>
+      </header>
+
+      <section class="section" id="research" aria-labelledby="research-title">
+        <div class="section-heading"><span class="section-number">02 /</span><h2 id="research-title">Research directions</h2></div>
+        <p class="section-lead">Program structure can reveal future work before execution reaches it. My research asks how systems can turn that information into useful lookahead.</p>
+        <div class="research-grid">
+          <article class="research-card"><span class="card-kicker">RESEARCH FOUNDATION</span><div class="diagram memory-diagram" aria-hidden="true"><span>Program structure</span><i>→</i><span>Lookahead</span><i>→</i><span class="filled">Prefetch</span></div><h3>Anticipating irregular memory accesses</h3><p>I study how loop structure, program order, and data movement can help prefetchers look ahead across indirect accesses and linked data structures.</p><div class="tags"><span>Prefetching</span><span>Memory systems</span><span>Microarchitecture</span></div></article>
+          <article class="research-card"><span class="card-kicker">EMERGING INTEREST</span><div class="diagram agent-diagram" aria-hidden="true"><span>Plan</span><i>⇄</i><span class="filled">Runtime feedback</span><i>⇄</i><span>CPU / GPU</span></div><h3>Making agent execution hardware-aware</h3><p>Explicit agent plans may reveal upcoming data and execution-state needs. I am exploring how runtime feedback can guide preparation across actions while accounting for uncertain branches, bandwidth, memory capacity, and compute.</p><div class="tags"><span>Agent systems</span><span>CPU–GPU execution</span><span>Co-design</span></div></article>
+        </div>
+      </section>
+
+      <section class="section" id="publications" aria-labelledby="publications-title">
+        <div class="section-heading"><span class="section-number">03 /</span><h2 id="publications-title">Publications & manuscripts</h2></div>
+        <div class="publication-toolbar"><div class="filters" role="group" aria-label="Filter publications"><button type="button" class="selected" data-filter="all" aria-pressed="true">All <span>5</span></button><button type="button" data-filter="published" aria-pressed="false">Published / accepted <span>3</span></button><button type="button" data-filter="review" aria-pressed="false">Under review <span>2</span></button></div><span id="publication-count" class="sr-only" aria-live="polite">Showing 5 publications</span></div>
+        <div class="publication-list">
+          <article class="publication" data-status="published"><div class="venue"><strong>MICRO</strong><span>2026</span></div><div class="publication-body"><div class="pub-meta"><span class="status accepted">Accepted</span><span>Hardware prefetching</span></div><h3>Loop-Decoupled Prefetcher for Linked Data Structure</h3><p class="authors"><strong>Pengchen Zong</strong>, Gelin Fu, Qiang Luo, Yijiang Kong, Chenzhun Guo, Wenzhe Zhao, Pengju Ren, and Tian Xia.</p><p class="pub-venue">IEEE/ACM International Symposium on Microarchitecture</p></div></article>
+          <article class="publication" data-status="published"><div class="venue"><strong>IEEE TC</strong><span>2020</span></div><div class="publication-body"><h3>PIT: Processing-In-Transmission with Fine-Grained Data Manipulation Networks</h3><p class="authors"><strong>Pengchen Zong</strong>, Tian Xia, Haoran Zhao, Jianming Tong, Zehua Li, Wenzhe Zhao, Nanning Zheng, and Pengju Ren.</p><p class="pub-venue">IEEE Transactions on Computers</p></div></article>
+          <article class="publication" data-status="published"><div class="venue"><strong>GLSVLSI</strong><span>2020</span></div><div class="publication-body"><h3>COCOA: Content-Oriented Configurable Architecture Based on Highly-Adaptive Data Transmission Networks</h3><p class="authors">Tian Xia, <strong>Pengchen Zong</strong>, Haoran Zhao, Jianming Tong, Wenzhe Zhao, Nanning Zheng, and Pengju Ren.</p><p class="pub-venue">ACM Great Lakes Symposium on VLSI <span class="contribution">First student author</span></p></div></article>
+          <article class="publication" data-status="review"><div class="venue"><strong>DATE</strong><span>2027</span></div><div class="publication-body"><div class="pub-meta"><span class="status review">Under review</span></div><h3>POP: Program-Order Prefetcher for Indirect Memory Access</h3><p class="authors"><strong>Pengchen Zong</strong>, Yijiang Kong, Yuwen Mao, Guoming Yang, Jiahao Pan, Gelin Fu, Wenzhe Zhao, Pengju Ren, and Tian Xia.</p><p class="pub-venue">Design, Automation and Test in Europe · Submitted manuscript</p></div></article>
+          <article class="publication" data-status="review"><div class="venue"><strong>ACM TACO</strong><span>Manuscript</span></div><div class="publication-body"><div class="pub-meta"><span class="status review">Under review</span></div><h3>LA-DMP: Loop-Aware Differential Matching Prefetcher for Indirect Memory Access</h3><p class="authors">Gelin Fu, Tian Xia, <strong>Pengchen Zong</strong>, Qiang Luo, Endian Li, and Pengju Ren.</p><p class="pub-venue">ACM Transactions on Architecture and Code Optimization <span class="contribution">First student author</span></p></div></article>
+        </div>
+      </section>
+
+      <section class="section" id="background" aria-labelledby="background-title">
+        <div class="section-heading"><span class="section-number">04 /</span><h2 id="background-title">Background</h2></div>
+        <div class="background-group"><h3 class="group-title">Education</h3><div class="timeline">
+          <article class="timeline-item"><div class="dates">2023.09 — Present</div><div><h4>Ph.D. Candidate · Artificial Intelligence</h4><p class="organization">Xi’an Jiaotong University, Xi’an</p><p>Co-advised by Prof. Pengju Ren and Prof. Tian Xia.<br>Expected defense: February 2028.</p></div></article>
+          <article class="timeline-item"><div class="dates">2018.09 — 2021.06</div><div><h4>M.S. · Electronic Science and Technology</h4><p class="organization">Xi’an Jiaotong University, Xi’an</p><p>Rank 9/93 · Outstanding Graduate Student · First-Class Academic Scholarship.<br>Co-advised by Prof. Pengju Ren and Prof. Tian Xia.</p></div></article>
+          <article class="timeline-item"><div class="dates">2014.09 — 2018.06</div><div><h4>B.S. · Microelectronics Science and Engineering</h4><p class="organization">Northwestern Polytechnical University, Xi’an</p></div></article>
+        </div></div>
+        <div class="background-group"><h3 class="group-title">Industry experience</h3><div class="timeline">
+          <article class="timeline-item"><div class="dates">2021.07 — 2023.08</div><div><h4>Digital IC Design Engineer</h4><p class="organization">HiSilicon Technologies, Shanghai</p><p>Led on-chip debug and observability architecture for a WiFi SoC; integrated an AI compute core; worked on SoC bus integration and verification.</p></div></article>
+          <article class="timeline-item"><div class="dates">2020.07 — 2020.09</div><div><h4>Intern · AI Hardware</h4><p class="organization">Alibaba T-Head / DAMO Academy, Shanghai</p><p>Specification, RTL design, verification, and synthesis for a fully associative instruction cache with data backpressure.</p></div></article>
+        </div></div>
+        <div class="background-group awards"><h3 class="group-title">Selected awards</h3><div class="award"><span class="award-rank">02<span>WORLDWIDE</span></span><div><h4>DAC 2019 System Design Contest · FPGA track</h4><p>HiPU-100 on Ultra96 running ShuffleNet-V2.</p></div></div><div class="award"><span class="award-rank">03<span>WORLDWIDE</span></span><div><h4>ICCV 2019 Low-Power Image Recognition Challenge</h4><p>EfficientNet-B4 on Ultra96.</p></div></div><div class="award"><span class="award-rank">01<span>NATIONAL</span></span><div><h4>First China Graduate AI Innovation Competition · Intel Cup</h4><p>National first prize. HiPU accelerator; cache subsystem and live demonstration.</p></div></div></div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading"><span class="section-number">05 /</span><h2 id="contact-title">Let’s connect.</h2></div>
+        <div class="contact-grid"><div><p class="contact-intro">I welcome conversations about memory systems, prefetching, and efficient execution for emerging workloads.</p><a class="email" href="mailto:zongpc.me@outlook.com">zongpc.me@outlook.com <span aria-hidden="true">↗</span></a><a class="secondary-email" href="mailto:zongpc@stu.xjtu.edu.cn">zongpc@stu.xjtu.edu.cn</a><p class="phone">Phone / WeChat: <a href="tel:+8613962775336">+86 13962775336</a></p><div class="contact-links"><a href="https://github.com/Zongpc" target="_blank" rel="noopener">GitHub ↗</a><a href="assets/CV-Pengchen-Zong.pdf" target="_blank" rel="noopener">CV ↗</a></div></div><figure class="qr"><img src="assets/homepage-qr.svg" alt="QR code for https://zongpc.github.io/" width="132" height="132" loading="lazy"><figcaption>SCAN TO CONNECT<br><a href="assets/homepage-qr.png" download>Download homepage QR ↗</a></figcaption></figure></div>
+      </section>
+      <footer><span>© 2026 Pengchen Zong</span><span>Xi’an Jiaotong University <span aria-hidden="true">↗</span></span><a href="#about">Back to top ↑</a></footer>
+    </main>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
