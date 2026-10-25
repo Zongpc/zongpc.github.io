@@ -17,8 +17,8 @@ This site is static HTML/CSS/JavaScript with no external font, framework, analyt
 - `index.html`: biography, research, publications, background and contact information.
 - `style.css`: responsive layout, typography, colors and print styles.
 - `script.js`: publication filters and section navigation.
-- `assets/CV-Pengchen-Zong.pdf`: supplied CV, preserved unchanged.
+- `assets/CV-Pengchen-Zong.pdf`: public CV containing only published or accepted work.
 - `assets/portrait.jpg`: supplied portrait.
 - `assets/homepage-qr.png` and `assets/homepage-qr.svg`: QR code encoding `https://zongpc.github.io/`.
 
-The publication status text reflects the supplied CV as of 25 October 2026. Under-review manuscripts are clearly identified and no unpublished manuscript PDFs are included. Update these statuses when decisions become available.
+Only published or accepted publications are included on this public website and in the downloadable CV.

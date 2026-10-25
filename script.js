@@ -10,7 +10,7 @@ filterButtons.forEach(button => button.addEventListener('click', () => {
   });
   publications.forEach(item => { item.hidden = filter !== 'all' && item.dataset.status !== filter; });
   const count = publications.filter(item => !item.hidden).length;
-  document.querySelector('#publication-count').textContent = `Showing ${count} publications`;
+  const counter = document.querySelector('#publication-count'); if (counter) counter.textContent = `Showing ${count} publications`;
 }));
 if ('IntersectionObserver' in window) {
   const navLinks = [...document.querySelectorAll('nav a')];
