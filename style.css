@@ -21,3 +21,7 @@
 @media(max-width:800px){.hobbies{gap:15px}.hobby h3{font-size:21px}.hobby p{font-size:10px}.hobby-caption{gap:8px}.hobby-panorama{margin:0 -5px 15px}}
 @media(max-width:520px){.hobby-panorama{display:none}.hobbies{grid-template-columns:1fr;gap:27px}.hobby-scene{display:block;width:100%;aspect-ratio:1.65;background-image:url('assets/hobbies-watercolor.webp');background-size:300% auto;background-repeat:no-repeat;mix-blend-mode:multiply}.hiking-scene{background-position:left 50%}.fishing-scene{background-position:center 58%}.racing-scene{background-position:right 64%}.hobby-caption{padding-top:12px;gap:12px}.hobby h3{font-size:24px}.hobby p{font-size:12px}.hobby-index{font-size:10px}.personal-lead{margin-bottom:18px}}
 @media print{.personal-section{break-inside:avoid}.hobby-panorama{display:block}.hobby-scene{display:none}.hobbies{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Make award distinctions explicit rather than list-like numbers. */
+.award-rank{width:106px;font-size:22px;line-height:1.15}
+@media(max-width:520px){.award-rank{width:86px;font-size:18px}}
