@@ -9,10 +9,10 @@
   <meta property="og:title" content="Pengchen Zong | Computer Architecture & Memory Systems">
   <meta property="og:description" content="Research in prefetching, hardware–software co-design, and efficient agent execution on CPU–GPU systems.">
   <meta property="og:url" content="https://zongpc.github.io/">
-  <meta property="og:image" content="https://zongpc.github.io/assets/portrait.jpg">
+  <meta property="og:image" content="https://zongpc.github.io/assets/portrait-casual.jpg">
   <link rel="canonical" href="https://zongpc.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=20261124">
+  <link rel="stylesheet" href="style.css?v=20261126">
   <title>Pengchen Zong | Computer Architecture & Memory Systems</title>
 </head>
 <body>
@@ -21,15 +21,15 @@
     <aside class="sidebar" aria-label="Profile and navigation">
       <a href="#about" class="monogram" aria-label="Pengchen Zong, home">PZ<span>↗</span></a>
       <div class="profile">
-        <img class="portrait" src="assets/portrait.jpg" alt="Pengchen Zong" width="164" height="188" fetchpriority="high">
+        <div class="portrait-frame"><img class="portrait" src="assets/portrait-casual.jpg" alt="Pengchen Zong" width="164" height="188" fetchpriority="high"></div>
         <p class="profile-name">Pengchen Zong <span lang="zh-Hans">宗鹏陈</span></p>
         <p class="profile-role">Ph.D. Candidate<br>Xi’an Jiaotong University</p>
         <p class="location"><span aria-hidden="true">◎</span> Xi’an, China</p>
       </div>
       <nav aria-label="Main navigation">
         <a href="#about" class="active"><span>About</span><span aria-hidden="true">01</span></a>
-        <a href="#research"><span>Research</span><span aria-hidden="true">02</span></a>
-        <a href="#publications"><span>Publications</span><span aria-hidden="true">03</span></a>
+        <a href="#publications"><span>Publications</span><span aria-hidden="true">02</span></a>
+        <a href="#research"><span>Research</span><span aria-hidden="true">03</span></a>
         <a href="#background"><span>Background</span><span aria-hidden="true">04</span></a>
         <a href="#beyond"><span>Beyond the desk</span><span aria-hidden="true">05</span></a>
         <a href="#contact"><span>Contact</span><span aria-hidden="true">06</span></a>
@@ -54,17 +54,8 @@
         <div class="news"><span class="news-label">RESEARCH UPDATE</span><p>Our paper on program-order prefetching for indirect memory access, <strong>POP</strong>, has been accepted to <strong>DATE 2027</strong>.</p></div>
       </header>
 
-      <section class="section" id="research" aria-labelledby="research-title">
-        <div class="section-heading"><span class="section-number">02 /</span><h2 id="research-title">Research directions</h2></div>
-        <p class="section-lead">Program structure can reveal future work before execution reaches it. My research asks how systems can turn that information into useful lookahead.</p>
-        <div class="research-grid">
-          <article class="research-card"><span class="card-kicker">RESEARCH FOUNDATION</span><div class="diagram memory-diagram" aria-hidden="true"><span>Program structure</span><i>→</i><span>Lookahead</span><i>→</i><span class="filled">Prefetch</span></div><h3>Anticipating irregular memory accesses</h3><p>I study how loop structure, program order, and data movement can help prefetchers look ahead across indirect accesses and linked data structures.</p><div class="tags"><span>Prefetching</span><span>Memory systems</span><span>Microarchitecture</span></div></article>
-          <article class="research-card"><span class="card-kicker">EMERGING INTEREST</span><div class="diagram agent-diagram" aria-hidden="true"><span>Plan</span><i>⇄</i><span class="filled">Runtime feedback</span><i>⇄</i><span>CPU / GPU</span></div><h3>Making agent execution hardware-aware</h3><p>Explicit agent plans may reveal upcoming data and execution-state needs. I am exploring how runtime feedback can guide preparation across actions while accounting for uncertain branches, bandwidth, memory capacity, and compute.</p><div class="tags"><span>Agent systems</span><span>CPU–GPU execution</span><span>Co-design</span></div></article>
-        </div>
-      </section>
-
       <section class="section" id="publications" aria-labelledby="publications-title">
-        <div class="section-heading"><span class="section-number">03 /</span><h2 id="publications-title">Publications</h2></div>
+        <div class="section-heading"><span class="section-number">02 /</span><h2 id="publications-title">Publications</h2></div>
 
         <div class="publication-list">
           <article class="publication" data-status="published"><div class="venue"><strong>DATE</strong><span>2027</span></div><div class="publication-body"><div class="pub-meta"><span class="status accepted">Accepted</span><span>Indirect memory access</span></div><h3>POP: Program-Order Prefetcher for Indirect Memory Access</h3><p class="authors"><strong>Pengchen Zong</strong>, Yijiang Kong, Yuwen Mao, Guoming Yang, Jiahao Pan, Gelin Fu, Wenzhe Zhao, Pengju Ren, and Tian Xia.</p><p class="pub-venue">Design, Automation and Test in Europe Conference</p></div></article>
@@ -72,6 +63,11 @@
           <article class="publication" data-status="published"><div class="venue"><strong>IEEE TC</strong><span>2020</span></div><div class="publication-body"><h3>PIT: Processing-In-Transmission with Fine-Grained Data Manipulation Networks</h3><p class="authors"><strong>Pengchen Zong</strong>, Tian Xia, Haoran Zhao, Jianming Tong, Zehua Li, Wenzhe Zhao, Nanning Zheng, and Pengju Ren.</p><p class="pub-venue">IEEE Transactions on Computers</p></div></article>
           <article class="publication" data-status="published"><div class="venue"><strong>GLSVLSI</strong><span>2020</span></div><div class="publication-body"><h3>COCOA: Content-Oriented Configurable Architecture Based on Highly-Adaptive Data Transmission Networks</h3><p class="authors">Tian Xia, <strong>Pengchen Zong</strong>, Haoran Zhao, Jianming Tong, Wenzhe Zhao, Nanning Zheng, and Pengju Ren.</p><p class="pub-venue">ACM Great Lakes Symposium on VLSI <span class="contribution">First student author</span></p></div></article>
         </div>
+      </section>
+
+      <section class="section research-summary" id="research" aria-labelledby="research-title">
+        <div class="section-heading"><span class="section-number">03 /</span><h2 id="research-title">Research directions</h2></div>
+        <p class="section-lead">My research focuses on prefetching for irregular memory accesses. I’m also exploring CPU microarchitecture and runtime support for AI agent workloads.</p>
       </section>
 
       <section class="section" id="background" aria-labelledby="background-title">

@@ -25,3 +25,11 @@
 /* Make award distinctions explicit rather than list-like numbers. */
 .award-rank{width:106px;font-size:22px;line-height:1.15}
 @media(max-width:520px){.award-rank{width:86px;font-size:18px}}
+
+/* Frame the supplied everyday photo without altering its pixels. */
+.portrait-frame{width:164px;height:188px;overflow:hidden;border-radius:6px;border:1px solid #e4e4dc;background:#d7d8ce}
+.portrait-frame .portrait{display:block;width:100%;height:100%;border:0;border-radius:0;object-fit:cover;object-position:50% 50%;transform:scale(2.05);transform-origin:50% 33%}
+.research-summary{padding:36px 0}
+.research-summary .section-heading{margin-bottom:14px}
+.research-summary .section-lead{max-width:720px;margin:0}
+@media(max-width:1100px){.portrait-frame{width:145px;height:172px}}
